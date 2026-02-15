@@ -31,6 +31,11 @@ p{
 }
 
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -254,4 +259,20 @@ footer input{
 
 .direitos p{
     font-size:0.75rem;
+}
+
+@media (max-width: 1440px){
+    header img{
+    width: 167px;
+    height: 64px;
+    font-size: 1rem;
+}
+    ul{
+        font-size: 1rem;
+        gap: 2rem;
+    }
+
+    .investigacao-main{
+        flex-direction: column;
+    }
 }
