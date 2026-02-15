@@ -50,6 +50,11 @@ header{
     margin: 1rem 0;
 }
 
+.logotipo-mobile{
+    display: none;
+
+}
+
 header img{
     width: 334px;
     height: 128px;
@@ -269,6 +274,23 @@ footer input{
 }
     ul{
         font-size: 1rem;
+        gap: 2rem;
+    }
+
+    .investigacao-main{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px){
+        header img{
+        width: 83px;
+        height: 32px;
+        
+    }
+
+    ul{
+        font-size: 0.5rem;
         gap: 2rem;
     }
 
