@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kadwa', serif;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 5.25rem;
+    margin: 2rem 6rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+:root{
+    --cor-amarelo: #FFEC58;
+    --cor-azul: #1B3577;
+    --cor-branco: #FFFFFF;
+    --cor-amarelo-escuro: #CE7F00;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 1rem 0;
+}
+
+header img{
+    width: 334px;
+    height: 128px;
+    font-size: 2rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    gap: 4rem;
+    margin-left: auto;
+    padding-right: 0;
+    flex-wrap: wrap;
+}
+
+.missao{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-image: url(imagens/paisagem1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--cor-branco);
+}
+
+.objetivo{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 2rem;
+    background-image: url(imagens/paisagem2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--cor-branco);
+}
+
+.objetivo, .missao h2{
+    font-size: 2.5rem;
+    
+}
+
+.objetivo-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.investigacao-main{
+    display: flex;
+    background-color: var(--cor-amarelo);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.investigacao-main p{
+    font-size: .6rem;
+}
+
+
+.investigacao-contentor{
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--cor-branco);
+    width: 500px;
+    padding: 1rem;
+}
+
+.investigacao-contentor img{
+    padding: 0;
+    margin: -1rem -1rem 0 -1rem;
+}
+
+.investigacao-contentor button{
+    display: flex;
+    background-color: var(--cor-amarelo-escuro);
+    color: var(--cor-branco);
+    border: solid 1rem var(--cor-branco);
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.investigacao-contentor h2{
+    color: var(--cor-amarelo-escuro);
+}
+
+.parcerias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 4rem;
+}
+
+.conquistas{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    color: var(--cor-azul);
+    border: solid 1rem var(--cor-azul);
+    border-radius: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.item h1 {
+    color: #1f3c88;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.item p {
+    color: #333;
+    line-height: 1.6;
+}
