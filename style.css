@@ -18,6 +18,17 @@ p{
     font-size: 1.5rem;
 }
 
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
 a{
     text-decoration: none;
     color: var(--cor-preto);
@@ -314,9 +325,26 @@ footer input{
         justify-content: flex-start;
     }
 
+
+    .menu-icon{
+        display: block;
+    }
+
     ul{
-        font-size: 0.5rem;
-        gap: 2rem;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--cor-branco);
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    #menu-toggle:checked ~ ul{
+        display: flex;
     }
 
     .investigacao-main{
