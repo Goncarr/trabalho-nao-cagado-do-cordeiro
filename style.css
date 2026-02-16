@@ -18,6 +18,11 @@ p{
     font-size: 1.5rem;
 }
 
+a{
+    text-decoration: none;
+    color: var(--cor-preto);
+}
+
 :root{
     --cor-amarelo: #FFEC58;
     --cor-azul: #1B3577;
@@ -37,9 +42,12 @@ body{
 }
 
 header{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--cor-branco);
 }
 
 .header-container{
@@ -267,7 +275,7 @@ footer input{
 }
 
 @media (max-width: 1350px){
-    .logotipo{
+    .logotipo img{
     width: 167px;
     height: 64px;
 }
@@ -297,7 +305,10 @@ footer input{
         height: 70px;
     }
 
-
+    .logotipo-mobile img{
+        width: 60px;
+        height: 70px;
+    }
 
     .objetivo{
         justify-content: flex-start;
