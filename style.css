@@ -47,10 +47,7 @@ a{
 }
 
 
-body{
-    display: flex;
-    flex-direction: column;
-}
+
 
 header{
     position: sticky;
@@ -77,7 +74,6 @@ header{
 .logotipo img{
     width: 334px;
     height: 128px;
-    font-size: 2rem;
 }
 
 ul{
@@ -141,7 +137,7 @@ ul{
     gap: 1rem;
     background-color: var(--cor-branco);
     margin: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
 }
 
 .investigacao-contentor img{
@@ -320,11 +316,6 @@ footer input{
         width: 60px;
         height: 70px;
     }
-
-    .objetivo{
-        justify-content: flex-start;
-    }
-
 
     .menu-icon{
         display: block;
