@@ -8,6 +8,11 @@
     font-weight: normal;
 }
 
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 h1{
     font-size: 5rem;
     margin: 2rem 6rem;
@@ -34,20 +39,20 @@ a{
     color: var(--cor-preto);
 }
 
+/*VARIVEIS UTILIZADAS*/
+
 :root{
-    --cor-amarelo: #FFEC58;
     --cor-azul: #1B3577;
     --cor-branco: #FFFFFF;
-    --cor-amarelo-escuro: #CE7F00;
     --cor-preto: #000000;
     --cor-conquista--cinzento: #333;
     --cor-botao: #3865D7;
     --cor-input--cinzento: #808080;
+    --cor--amarelo: #FFCB21;
     
 }
 
-
-
+/*CABEÇALHO*/
 
 header{
     position: sticky;
@@ -65,6 +70,13 @@ header{
     width: 90%;
     margin: 1rem 0;
 }
+
+#Missao, #Investigacao, #Parcerias,#Oportunidades,#Contactos {
+            display: block;
+            position: relative;
+            top: -500px;
+            visibility: hidden;
+        }
 
 .logotipo-mobile{
     display: none;
@@ -86,6 +98,7 @@ ul{
     flex-wrap: wrap;
 }
 
+/*MISSAO E OBJETIVO*/
 .missao, .objetivo{
     display: flex;
     flex-direction: column;
@@ -98,33 +111,34 @@ ul{
 
 .missao{
     background-image: url(imagens/paisagem1.png);
+    
 }
 
 .objetivo{
-    align-items: flex-end;
     background-image: url(imagens/paisagem2.png);
 }
 
 .objetivo h2, .missao h2{
-    font-size: 2.5rem;
+    font-size: 4rem;
     
 }
 
-.objetivo-container{
-    display: flex;
-    flex-direction: column;
+.objetivo p, .missao p{
+    font-size: 2.2rem;
 }
+
+/*INVESTIGAÇÃO*/
 
 .investigacao-main{
     display: flex;
     flex-wrap:wrap;
-    background-color: var(--cor-amarelo);
+    background-color: var(--cor-azul);
     justify-content: center;
     align-items: center;
 }
 
 .investigacao-main p{
-    font-size: .6rem;
+    font-size: 1rem;
 }
 
 
@@ -150,7 +164,7 @@ ul{
 
 .investigacao-contentor button{
     display: flex;
-    background-color: var(--cor-amarelo-escuro);
+    background-color: var(--cor-azul);
     color: var(--cor-branco);
     border: solid 1rem var(--cor-branco);
     align-items: center;
@@ -160,8 +174,10 @@ ul{
 }
 
 .investigacao-contentor h2{
-    color: var(--cor-amarelo-escuro);
+    color: var(--cor-azul);
 }
+
+/*PARCERIAS*/
 
 .parcerias{
     display: flex;
@@ -172,32 +188,46 @@ ul{
     gap: 4rem;
 }
 
+.parcerias img {
+    width: clamp(100px, 15vw, 250px);
+    height: auto;
+}
+/*CONQUISTAS*/
+
 .conquistas{
     display: flex;
+    max-width: 80%;
     flex-direction: column;
-    margin: 2rem;
+    margin: 2rem auto;
     padding: 2rem;
     color: var(--cor-azul);
     border: solid 0.5rem var(--cor-azul);
-    border-radius: 20px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 1.5rem;
 }
 
 .item h1 {
     color: var(--cor-azul);
     font-size: 36px;
     margin: 0 0 15px 0;
+    font-weight:bold;
 }
-
+.conquistas h2 {
+    color: var(--cor-azul);
+    font-size: 30px;
+    margin: 0 0 15px 0;
+    font-weight:bold;
+}
 .item p {
     color: var(--cor-conquista--cinzento);
     line-height: 1.6;
 }
+
+/*FOOTER*/
 
 footer{
     display:flex;
@@ -219,17 +249,14 @@ footer p, footer h1{
 }
 
 footer button{
-    background-color:var(--cor-botao);
+    background-color:var(--cor--amarelo);
     border: 0px;
-    color: var(--cor-branco);
-    border-radius: 5px;
+    color: var(--cor-preto);
 }
 
 footer input{
     width: 100%;
-    max-width: 10em;
     border: solid 2px var(--cor-input--cinzento);
-    border-radius: 5px;
     padding-left: 0.2rem;
 }
 
@@ -237,8 +264,7 @@ footer input{
     margin: 1rem;
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    border-bottom: solid 2px var(--cor-branco);
+    width: 60%;
 }
 
 .direitos{
@@ -255,16 +281,6 @@ footer input{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.email-linha{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.email-linha input{
-    flex: 1;
 }
 
 .direitos{
@@ -320,6 +336,7 @@ footer input{
     .menu-icon{
         display: block;
     }
+
 
     ul{
         display: none;
